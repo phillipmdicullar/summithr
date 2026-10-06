@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
+import Logo from "../assets/Logo.png";
 
 const navLinks = [
   { name: "Home", href: "#" },
@@ -13,20 +14,73 @@ const navLinks = [
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  const closeMenu = () => {
+    setMobileOpen(false);
+  };
+
   return (
-    <>
-        <nav className="navbar">
-            <h3>Summit HRMC</h3>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact Us <ChevronDown /></a></li>
-                <li><a href="#trainings">Trainings</a></li>
-                <li><a href="#jobs">Jobs</a></li>
-                <li><a href="#" className="get-in-touch">Get in Touch</a></li>
-            </ul>
-        </nav>
-    </>
+    <header className="navbar">
+
+      {/* Logo */}
+      <a href="#" onClick={closeMenu}>
+        <img src={Logo} alt="Summit HRMC" className="logo" />
+      </a>
+
+      {/* Desktop Navigation */}
+      <ul className="nav-links">
+        {navLinks.map((link) => (
+          <li key={link.name}>
+            <a href={link.href}>
+              {link.name}
+
+              {link.dropdown && (
+                <ChevronDown size={17} />
+              )}
+            </a>
+          </li>
+        ))}
+
+        <li>
+          <a href="#contact" className="get-in-touch">
+            Get in Touch
+          </a>
+        </li>
+      </ul>
+
+      {/* Mobile menu button */}
+      <button
+        className="menu-button"
+        onClick={() => setMobileOpen(!mobileOpen)}
+        aria-label="Toggle navigation"
+      >
+        {mobileOpen ? <X size={28} /> : <Menu size={28} />}
+      </button>
+
+      {/* Mobile Navigation */}
+      <div className={`mobile-menu ${mobileOpen ? "open" : ""}`}>
+        {navLinks.map((link) => (
+          <a
+            key={link.name}
+            href={link.href}
+            onClick={closeMenu}
+          >
+            <span>{link.name}</span>
+
+            {link.dropdown && (
+              <ChevronDown size={17} />
+            )}
+          </a>
+        ))}
+
+        <a
+          href="#contact"
+          className="mobile-contact"
+          onClick={closeMenu}
+        >
+          Get in Touch
+        </a>
+      </div>
+
+    </header>
   );
 }
