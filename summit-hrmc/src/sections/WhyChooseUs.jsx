@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
 
           <div className="relative overflow-hidden rounded-[2rem]">
             <img
-              src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1200&q=85"
+              src="https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Professionals collaborating in a meeting"
               className="h-[560px] w-full object-cover"
             />
