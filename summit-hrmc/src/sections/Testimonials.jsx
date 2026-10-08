@@ -8,15 +8,15 @@ const testimonials = [
     text: "Summit provided professional and reliable support throughout the process. Their team understood our needs and delivered a solution that made a real difference.",
   },
   {
-    name: "Client Name",
+    name: "Philip Emdokolo",
     role: "HR Manager",
-    company: "Company Name",
+    company: "Almaq ceramics",
     text: "The team was responsive, professional, and easy to work with. We appreciated their practical approach and attention to detail.",
   },
   {
-    name: "Client Name",
+    name: "Gagan vishwas",
     role: "Business Owner",
-    company: "Company Name",
+    company: "Boda plus company limnited",
     text: "Summit helped us identify the right approach for our organization. Their expertise and commitment made the entire experience seamless.",
   },
 ];
