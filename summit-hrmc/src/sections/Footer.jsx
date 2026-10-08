@@ -162,7 +162,7 @@ export default function Footer() {
                 />
 
                 <span>
-                  YOUR EMAIL
+                  info@summithrmc.com
                 </span>
               </a>
 
@@ -177,7 +177,7 @@ export default function Footer() {
                 />
 
                 <span>
-                  YOUR PHONE
+                  (+254) 785227043
                 </span>
               </a>
 
@@ -189,7 +189,7 @@ export default function Footer() {
                 />
 
                 <span>
-                  YOUR OFFICE ADDRESS
+                  Heritage Plaza Mombasa Rd, Nairobi Kenya 2644-00200
                 </span>
               </div>
 

@@ -2,9 +2,9 @@ import { Quote, Star } from "lucide-react";
 import "./testimonial.css"
 const testimonials = [
   {
-    name: "Client Name",
+    name: "Ms. Celestine Munda",
     role: "Managing Director",
-    company: "Company Name",
+    company: "Britam",
     text: "Summit provided professional and reliable support throughout the process. Their team understood our needs and delivered a solution that made a real difference.",
   },
   {

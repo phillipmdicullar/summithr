@@ -77,7 +77,7 @@ export default function CTA() {
                   </p>
 
                   <p className="mt-1 text-sm font-semibold text-white">
-                    +254 XXX XXX XXX
+                    +254 785 227 043
                   </p>
                 </div>
               </div>
@@ -93,7 +93,7 @@ export default function CTA() {
                   </p>
 
                   <p className="mt-1 text-sm font-semibold text-white">
-                    Nairobi, Kenya
+                    Nairobi, Kenya, Heritage Plaza Mombasa Rd Kenya 2644-00200 
                   </p>
                 </div>
               </div>
