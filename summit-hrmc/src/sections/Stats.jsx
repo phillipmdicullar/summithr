@@ -22,7 +22,7 @@ const stats = [
 export default function Stats() {
   return (
     <div className="stats">
-      <section className="bg-[#0b2d4f] px-6 py-20 lg:px-8">
+      <section className="bg-[#0b2d4f] px-6 py-20 lg:px-8 rounded-2xl ">
       <div className="mx-auto max-w-7xl">
 
         <div className="grid gap-10 lg:grid-cols-[1fr_2fr] lg:items-center">
